@@ -1,0 +1,110 @@
+html {
+    font-family: 'Cascadia Code', sans-serif;
+    background-color: #EEE;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    
+}
+
+/* Estilo Pontuacao */
+
+.scores {
+    display: flex;
+}
+
+.score{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score h1{
+    font-weight: 300;
+
+}
+
+.life-bar{
+    width: 80%;
+    height: 20px;
+    border: 1px solid #AAA; 
+    border-radius: 20px;
+}
+
+.life-bar .life {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    border-radius: 20px;
+    background-color: seagreen;
+}
+
+.life-bar .life.danger{
+    background-color: red;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.result .win{
+    color: green;
+}
+
+.result .lose{
+    color: red;
+}
+
+/* Estilo Botoes */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+    padding: 8px 10px;
+    margin: 0 10px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+
+.new-game{
+    background-color: #4A61E0;
+    color: #fff;
+}
+
+.basic-attack {
+    background-color: #e51c23;
+    color: #fff;
+}
+
+.especial-attack {
+    background-color: #ff9800;
+    color: black;
+}
+
+.heal {
+    background-color: #259B24;
+    color: #ffff;
+}
+
+.give-up {
+    background-color: #BBB;
+    color: #000;
+}
