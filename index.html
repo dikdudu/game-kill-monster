@@ -32,13 +32,17 @@
             <template v-if="running">
                 <button @click="attack(false)" class="btn basic-attack">Ataque Basico</button>
                 <button @click="attack(true)" class="btn especial-attack">Ataque Especial</button>
-                <button class="btn heal">Curar</button>
+                <button @click="healAndHurt" class="btn heal">Curar</button>
                 <button @click="running = false" class="btn give-up">Desistir</button>
             </template>
             
             <button v-else  @click="startGame" class="btn new-game">Iniciar Novo Jogo</button>
         </div>
-        <div class="panel logs"></div>
+        <div v-if="logs.length" class="panel logs">
+            <ul>
+                <li v-for="log in logs" :class="log.cls">{{log.txt}}</li>
+            </ul>
+        </div>
     </div>
     
 
